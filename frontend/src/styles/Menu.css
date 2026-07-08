@@ -1,0 +1,61 @@
+.menu-page{
+
+    width:100%;
+
+    padding:120px 40px 80px;
+
+    background:#01c4ff;
+}
+
+.menu-section{
+
+    margin-bottom:100px;
+}
+
+.menu-title{
+
+    text-align:center;
+
+    font-size:48px;
+
+    margin-bottom:50px;
+
+    position:relative;
+}
+
+.menu-title::before,
+.menu-title::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:50%;
+
+    width:35%;
+
+    height:2px;
+
+    background:#ccc;
+}
+
+.menu-title::before{
+
+    left:0;
+}
+
+.menu-title::after{
+
+    right:0;
+}
+
+.food-grid{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:40px;
+}
