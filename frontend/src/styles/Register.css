@@ -12,7 +12,9 @@
 
 .register-form{
 
-    width:420px;
+    width:100%;
+
+    max-width:420px;
 
     background:white;
 
@@ -26,6 +28,8 @@
     gap:20px;
 
     box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+    box-sizing:border-box;
 }
 
 .register-form h1{
@@ -75,4 +79,73 @@
     margin-left:8px;
 
     text-decoration:none;
+}
+
+@media(max-width:768px){
+
+    .register-page{
+
+        padding:20px;
+
+    }
+
+
+    .register-form{
+
+        width:100%;
+
+        padding:25px 20px;
+
+    }
+
+
+    .register-form h1{
+
+        font-size:28px;
+
+    }
+
+
+    .register-form input{
+
+        width:100%;
+
+        box-sizing:border-box;
+
+        font-size:15px;
+
+    }
+
+
+    .register-form button{
+
+        width:100%;
+
+    }
+
+}
+
+
+@media(max-width:400px){
+
+    .register-form{
+
+        padding:20px 15px;
+
+    }
+
+
+    .register-form h1{
+
+        font-size:24px;
+
+    }
+
+
+    .signup-link{
+
+        margin-left:5px;
+
+    }
+
 }

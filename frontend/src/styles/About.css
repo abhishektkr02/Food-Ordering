@@ -38,3 +38,89 @@
     margin:12px 0;
     font-size:18px;
 }
+
+/* Mobile Responsive About */
+
+@media(max-width:768px){
+
+    .about-page{
+
+        padding:100px 15px 50px;
+
+    }
+
+
+    .about-container{
+
+        padding:25px 20px;
+
+        border-radius:15px;
+
+    }
+
+
+    .about-container h1{
+
+        font-size:32px;
+
+    }
+
+
+    .about-container h2{
+
+        font-size:22px;
+
+        margin-top:25px;
+
+    }
+
+
+    .about-container p{
+
+        font-size:15px;
+
+        line-height:1.6;
+
+    }
+
+
+    .about-container li{
+
+        font-size:16px;
+
+    }
+
+}
+
+
+
+@media(max-width:400px){
+
+    .about-container{
+
+        padding:20px 15px;
+
+    }
+
+
+    .about-container h1{
+
+        font-size:28px;
+
+    }
+
+
+    .about-container h2{
+
+        font-size:20px;
+
+    }
+
+
+    .about-container li{
+
+        font-size:15px;
+
+    }
+
+}

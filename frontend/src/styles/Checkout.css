@@ -18,7 +18,9 @@
 
 .checkout-form{
 
-    width:500px;
+    width:100%;
+
+    max-width:500px;
 
     margin:auto;
 
@@ -72,4 +74,70 @@
     font-size:18px;
 
     cursor:pointer;
+}
+
+@media(max-width:768px){
+
+    .checkout-page{
+
+        padding:100px 15px 50px;
+
+    }
+
+
+    .checkout-page h1{
+
+        font-size:30px;
+
+        margin-bottom:25px;
+
+    }
+
+
+    .checkout-form{
+
+        padding:20px;
+
+        width:100%;
+
+    }
+
+
+    .checkout-form input,
+    .checkout-form textarea,
+    .checkout-form select{
+
+        width:100%;
+
+        box-sizing:border-box;
+
+        font-size:15px;
+
+    }
+
+
+    .checkout-form button{
+
+        width:100%;
+
+    }
+
+}
+
+
+@media(max-width:400px){
+
+    .checkout-page h1{
+
+        font-size:26px;
+
+    }
+
+
+    .checkout-form{
+
+        padding:15px;
+
+    }
+
 }

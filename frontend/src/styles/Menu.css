@@ -59,3 +59,57 @@
 
     gap:40px;
 }
+
+@media(max-width:768px){
+
+    .menu-page{
+
+        padding:100px 15px 50px;
+
+    }
+
+
+    .menu-title{
+
+        font-size:32px;
+
+        margin-bottom:35px;
+
+    }
+
+
+    .menu-title::before,
+    .menu-title::after{
+
+        width:20%;
+
+    }
+
+
+    .food-grid{
+
+        gap:20px;
+
+    }
+
+}
+
+
+
+@media(max-width:400px){
+
+    .menu-title{
+
+        font-size:28px;
+
+    }
+
+
+    .menu-title::before,
+    .menu-title::after{
+
+        display:none;
+
+    }
+
+}

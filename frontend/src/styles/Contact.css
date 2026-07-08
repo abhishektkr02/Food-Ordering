@@ -64,3 +64,101 @@
     margin:10px 0;
     font-size:17px;
 }
+
+/* Mobile Responsive Contact */
+
+@media(max-width:768px){
+
+    .contact-page{
+
+        padding:100px 15px 50px;
+
+    }
+
+
+    .contact-container{
+
+        padding:25px 20px;
+
+        border-radius:15px;
+
+    }
+
+
+    .contact-container h1{
+
+        font-size:32px;
+
+        margin-bottom:25px;
+
+    }
+
+
+    .contact-form input,
+    .contact-form textarea{
+
+        width:100%;
+
+        box-sizing:border-box;
+
+        font-size:15px;
+
+    }
+
+
+    .contact-form textarea{
+
+        height:120px;
+
+    }
+
+
+    .contact-form button{
+
+        width:100%;
+
+        font-size:16px;
+
+    }
+
+
+    .contact-info{
+
+        margin-top:30px;
+
+    }
+
+
+    .contact-info p{
+
+        font-size:15px;
+
+    }
+
+}
+
+
+
+@media(max-width:400px){
+
+    .contact-container{
+
+        padding:20px 15px;
+
+    }
+
+
+    .contact-container h1{
+
+        font-size:28px;
+
+    }
+
+
+    .contact-info h2{
+
+        font-size:22px;
+
+    }
+
+}

@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { CartContext } from "../context/CartContext";
 import "../styles/Navbar.css";
 import { AuthContext } from "../context/AuthContext";
@@ -9,7 +9,9 @@ function Navbar() {
   const { cartItems } = useContext(CartContext);
   const { isLoggedIn, logout } = useContext(AuthContext);
   const navigate = useNavigate();
-  
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const totalItems = cartItems.reduce(
     (sum, item) => sum + item.quantity,
     0
@@ -24,17 +26,27 @@ function Navbar() {
         Foodie
       </div>
 
-      <div className="nav-links">
 
-        <NavLink to="/">Home</NavLink>
+      <button 
+        className="menu-btn"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        ☰
+      </button>
 
-        <NavLink to="/menu">Menu</NavLink>
 
-        <NavLink to="/about">About</NavLink>
+      <div className={`nav-links ${menuOpen ? "open" : ""}`}>
 
-        <NavLink to="/services">Services</NavLink>
+        <NavLink to="/" onClick={()=>setMenuOpen(false)}>Home</NavLink>
 
-        <NavLink to="/contact">Contact</NavLink>
+        <NavLink to="/menu" onClick={()=>setMenuOpen(false)}>Menu</NavLink>
+
+        <NavLink to="/about" onClick={()=>setMenuOpen(false)}>About</NavLink>
+
+        <NavLink to="/services" onClick={()=>setMenuOpen(false)}>Services</NavLink>
+
+        <NavLink to="/contact" onClick={()=>setMenuOpen(false)}>Contact</NavLink>
+
 
         <NavLink to="/cart" className="cart-link">
           🛒 Cart
@@ -42,6 +54,7 @@ function Navbar() {
             {totalItems}
           </span>
         </NavLink>
+
 
         {isLoggedIn ? (
           <>
@@ -51,7 +64,7 @@ function Navbar() {
 
             <button
               className="logout-btn"
-              onClick={() => {
+              onClick={()=>{
                 logout();
                 navigate("/");
               }}

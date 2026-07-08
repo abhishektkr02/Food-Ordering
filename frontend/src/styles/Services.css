@@ -37,3 +37,80 @@
     color:#555;
     line-height:1.7;
 }
+
+/* Mobile Responsive Services */
+
+@media(max-width:768px){
+
+    .services-page{
+
+        padding:100px 15px 50px;
+
+    }
+
+
+    .services-page h1{
+
+        font-size:32px;
+
+        margin-bottom:35px;
+
+    }
+
+
+    .services-grid{
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+
+    }
+
+
+    .service-card{
+
+        padding:25px 20px;
+
+    }
+
+
+    .service-card h2{
+
+        font-size:22px;
+
+    }
+
+
+    .service-card p{
+
+        font-size:15px;
+
+    }
+
+}
+
+
+
+@media(max-width:400px){
+
+    .services-page h1{
+
+        font-size:28px;
+
+    }
+
+
+    .service-card{
+
+        padding:20px 15px;
+
+    }
+
+
+    .service-card h2{
+
+        font-size:20px;
+
+    }
+
+}
