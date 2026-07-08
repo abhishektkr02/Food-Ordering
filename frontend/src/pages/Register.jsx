@@ -18,7 +18,7 @@ function Register() {
     try {
 
         await axios.post(
-            "http://localhost:5000/api/auth/register",
+            "https://food-ordering-he1w.onrender.com/api/auth/register",
             {
                 name,
                 email,

@@ -32,7 +32,7 @@ function Checkout() {
 
     await axios.post(
 
-      "http://localhost:5000/api/orders",
+      "https://food-ordering-he1w.onrender.com/api/orders",
 
       {
 
